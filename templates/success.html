@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Registration successfull</title>
+    <style type="text/css">
+    .send-button{
+    background: #54C7C3;
+    width:100%;
+    font-weight: 600;
+    color:#fff;
+    padding: 8px 25px;
+    }
+    .header-title{
+    margin: 2rem 0;
+    }
+    h1{
+    font-size: 31px;
+    line-height: 40px;
+    font-weight: 600;
+    color:#4c5357;
+    }
+    h2{
+    color: #5e8396;
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 400;
+    }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-6 mx-auto text-center">
+            <div class="header-title">
+               <h1 class="wv-heading--title">
+                  PyShop
+               </h1>
+               <h2 class="wv-heading--subtitle">
+                  Your destination for fresh vegies and fruits
+               </h2>
+               <h2>
+                Registration successfull
+               </h2>
+            </div>
+         </div>
+        <div class="row">
+           <div class="col-md-4 mx-auto">
+              <div class="myform form ">
+                <form action="/"  method="POST">{% csrf_token %}
+                    <div class="text-center ">
+                       <button type="submit" class=" btn btn-block send-button tx-tfm" name="submit">Back to Login</button>
+                    </div>                    
+                 </form>
+              </div>
+           </div>
+        </div>
+     </div>
+</body>
+</html>

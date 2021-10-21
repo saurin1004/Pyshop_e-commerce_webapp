@@ -1,0 +1,16 @@
+<html>
+    <script type="text/javascript">
+    function showProduct(){
+        var val=document.getElementById("p").value;
+        document.getElementById("form").action="/view_products/"+val;
+        document.getElementById("form").submit();                               
+       
+    }
+    </script>
+<body onload="showProduct()">
+
+<form action="/view_products/" method="GET">
+    <p value={{usrname}} id="p"></p>
+</form>
+</body>
+</html>

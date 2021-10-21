@@ -1,0 +1,100 @@
+<!--
+    <form action="/createNewUser" id="form" method="POST">{% csrf_token %}
+
+    Enter User Name: <input type="text" name="name"><br>
+    Enter Email:<input type="email" name="email"><br>
+    Enter Your Password: <input type="password" name="password"><br>
+    <input type="submit" value="Search"><br>
+</form>
+-->
+<!doctype html>
+<html lang="en"> 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Sign-Up</title>
+    <style type="text/css">
+    .send-button{
+    background: #54C7C3;
+    width:100%;
+    font-weight: 600;
+    color:#fff;
+    padding: 8px 25px;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+    }
+    .my-input{
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: text;
+    padding: 8px 10px;
+    transition: border .1s linear;
+    }
+    .header-title{
+    margin: 2rem 0;
+    }
+    h1{
+    font-size: 31px;
+    line-height: 40px;
+    font-weight: 600;
+    color:#4c5357;
+    }
+    h2{
+    color: #5e8396;
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 400;
+    }   
+
+    .condition{
+        color:red;
+    } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-6 mx-auto text-center">
+            <div class="header-title">
+               <h1 class="wv-heading--title">
+                  PyShop
+               </h1>
+               <h2 class="wv-heading--subtitle">
+                  Your destination for fresh vegies and fruits
+               </h2>
+            </div>
+         </div>
+         <div class="condition" align="center">
+             {{condition}}
+         </div>
+        <div class="row">
+           <div class="col-md-4 mx-auto">
+              <div class="myform form ">
+                <form action="/createNewUser" id="form" method="POST">{% csrf_token %}
+                    <div class="form-group">
+                       <input type="text" name="name" class="form-control my-input" placeholder="username">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control my-input" placeholder="e-mail">
+                     </div>
+                    <div class="form-group">
+                        <input type="password" name="password"  class="form-control my-input" placeholder="password">
+                     </div>
+                    <div class="text-center ">
+                       <button type="submit" class=" btn btn-block send-button tx-tfm" value="Search">Submit</button>
+                    </div>                    
+                 </form>
+              </div>
+           </div>
+        </div>
+     </div>
+</body>
+</html>
