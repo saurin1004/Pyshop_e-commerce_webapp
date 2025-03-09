@@ -24,12 +24,14 @@ Follow these steps to get started with PyShop:
      ```sh
      pip install django==2.1
      ```
+     ![Installing Django](install_django.png)
 
 4. **Run the Django Server**  
    - Navigate inside the extracted folder and execute:
      ```sh
      python manage.py runserver
      ```
+     ![Running the Server](runserver.png)
    - This starts the server. Open the generated link `http://127.0.0.1:8000/` in your browser to access the home page.
 
 ## Features
@@ -38,29 +40,37 @@ Follow these steps to get started with PyShop:
 - **Login/Signup Page**  
   - Users can create a new account or log in to an existing one.
   - Incorrect login credentials display "User Not Found."
+   ![Login](login_page.png)
+   ![Sign up](login_page2.png)
+   ![Sign up confirmation](login_page3.png)
   
 - **Products (Home) Page**  
   - Displays all available products.
   - Users can add products to their cart.
   - Navigation to profile, cart, and logout.
+   ![Products](cart.png)
 
 - **Profile Page**  
   - Displays user details.
   - Navigation options to Products, Cart, and Logout.
+  ![Profile](Profile.png)
 
 - **Cart Page**  
   - Displays selected products.
   - Users can add or remove items.
   - Clicking "Place Order" proceeds to checkout.
+  ![Cart](Cart2.png)
 
 - **Checkout Page**  
   - Users provide details for order delivery.
   - All fields are mandatory.
   - Clicking "Submit" places the order.
+   ![Checkout](Checkout.png)
 
 - **Order Confirmation Page**  
   - Displays an auto-generated message confirming the order.
   - Logout option is available.
+  ![Order Confirmation](Message.png)
 
 ### Admin Side
 - **Accessing Admin Panel**  
@@ -74,6 +84,7 @@ Follow these steps to get started with PyShop:
     ```sh
     python manage.py createsuperuser
     ```
+   ![Admin screen](Adminpage.png)
 
 - **Admin Features**  
   - Manage and authorize all database details.
