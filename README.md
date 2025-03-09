@@ -91,15 +91,6 @@ Follow these steps to get started with PyShop:
   - Add, update, or delete products.
   - Manage carts, products, offers, and customers.
 
-## Project Structure
-
-pyshop/
-
--- user/views.py 
-
--- cart/views.py 
-
--- pyshop/views.py
 
 ## URLs
 - User Login: `/login`
